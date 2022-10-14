@@ -11,7 +11,13 @@ public class FunController {
 	@GetMapping("/")
 	public String printHello() {
 
-		return "===> Time is:- " + LocalTime.now();
+		return "===> Time updated test:- " + LocalTime.now();
+	}
+	
+	@GetMapping("/workout")
+	public String getWorkout() {
+		
+		return "===> Time started for workout not:- " + LocalTime.now();
 	}
 
 }
